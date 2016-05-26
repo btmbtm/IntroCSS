@@ -48,6 +48,7 @@ section.directory {
 }
 
 footer {
-    margin-left: 5%;
-    margin-top: 5%;
+  clear: both;
+  text-align: center;
+  margin-top: 100px;
 }
