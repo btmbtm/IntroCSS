@@ -6,40 +6,45 @@ form {
   margin: auto;
   margin-top: 50px;
   border-radius: 2%;
-  background-color: Snow;
+  background-color: Snow
 }
 form fieldset {
   background-color: white;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 1.2em;
+  font-size: 1.2em
 }
 form fieldset legend {
-  font-size: 1.2em;
+  font-size: 1.2em
 }
 form h1 {
-  margin-left: 10px;
+  margin-left: 10px
 }
 form ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0
 }
 form label {
   width: 8%;
-  display: inline-block;
+  display: inline-block
 }
 form input[type="range"] {
   width: 80%;
-  display: inline-block;
+  display: inline-block
 }
 form input[type="text"] {
   width: 100%;
   background-color: black;
-  border: none;
+  border: none
 }
 form output {
   text-align: center;
   width: 8%;
-  display: inline-block;
+  display: inline-block
+}
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 10%
 }

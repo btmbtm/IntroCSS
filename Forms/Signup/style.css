@@ -58,3 +58,9 @@ form input:focus:invalid {
 form input:focus:valid {
   background-color: Chartreuse;
 }
+
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 10%
+}

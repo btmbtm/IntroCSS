@@ -57,3 +57,9 @@ input[type="submit"]:active {
   background-color: Gray ; 
   color: white;
 }
+
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 10%
+}

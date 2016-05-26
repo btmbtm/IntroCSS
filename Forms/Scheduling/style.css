@@ -112,3 +112,9 @@ form input[type="submit"]:active{
   background-color: Plum  ;
   color: white;
 }
+
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 10%
+}

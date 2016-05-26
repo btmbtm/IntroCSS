@@ -214,7 +214,7 @@ header nav ul li {
 }
 
 footer {
-    clear: both;
-    margin-left: 5%;
-    margin-top: 10%;
+  clear: both;
+  text-align: center;
+  margin-top: 10%
 }

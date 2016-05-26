@@ -103,3 +103,9 @@ form input[type="submit"]:active{
   margin-top: 10px;
   
 }
+
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 10%
+}
