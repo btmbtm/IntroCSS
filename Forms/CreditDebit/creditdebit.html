@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Introduction to CSS: Credit / Debit Card Form </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://use.fontawesome.com/0b12db3902.js"></script>
+    </head>
+    <body>
+        
+        <form action="" method="">
+            <h2><i class="fa fa-credit-card fa-5x" aria-hidden="true"></i></h2>
+            <h1> Payment Card Information </h1>
+            <fieldset>
+                <legend> Personal Info </legend>
+                <div class="billingSection">
+                    <input type="text" id="name" placeholder="Full Name" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> Card Information: </legend>
+                <div class="billingSection">
+                    <input type="text" id="cardnum" placeholder="Card Number" minlength="16" maxlength="19" />
+                </div>
+                <div class="billingSection">
+                    <input type="text" id="csv" size="5" minlength="16" maxlength="19" placeholder="CSV" />
+                    <select>
+                        <option selected disabled> Month </option>
+                        <option value="jan"> January </option>
+                        <option value="feb"> February </option>
+                        <option value="mar"> March </option>
+                        <option value="apr"> April </option>
+                        <option value="may"> May </option>
+                        <option value="jun"> June </option>
+                        <option value="jul"> July </option>
+                        <option value="aug"> August </option>
+                        <option value="sep"> September </option>
+                        <option value="oct"> October </option>
+                        <option value="nov"> November </option>
+                        <option value="dec"> December </option>
+                    </select>
+                    <select>
+                        <option selected disabled> Year </option>
+                        <option val="16"> '16 </option>
+                        <option val="17"> '17 </option>
+                        <option val="18"> '18 </option>
+                        <option val="19"> '19 </option>
+                        <option val="20"> '20 </option>
+                        <option val="21"> '21 </option>
+                        <option val="22"> '22 </option>
+                        <option val="23"> '23 </option>
+                        <option val="24"> '24 </option>
+                        <option val="25"> '25 </option>
+                        <option val="26"> '26 </option>
+                        <option val="27"> '27 </option>
+                        <option val="28"> '28 </option>
+                        <option val="29"> '29 </option>
+                        <option val="30"> '30 </option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="billingSection">
+                <input type="submit" value="Checkout" />
+            </div>
+        </form>
+        <footer>
+            <h2><a href="/index.html" > Project Directory </a></h2>
+            <h5> Brian Merriman | Modern Developer | 2016 </h5>
+        </footer>
+    </body>
+</html>

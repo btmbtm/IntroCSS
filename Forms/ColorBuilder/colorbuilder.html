@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Introduction to CSS: Color Builder </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        
+        <form action="" method="">
+        
+            <h1> Color Builder </h1>
+
+            <fieldset>
+                <legend> RGB </legend>
+                <ul>
+                    <li><label><span class="red"> Red</span>:</label><input type="range" id="redInput" min="0" max="255" value="0" step="5" oninput="redOutput.value=redInput.value" /> <output for="redInput" id="redOutput" value="0">0</output></li>
+                    
+                    <li><label> <span class="green">Green</span>: </label><input type="range" id="greenInput" min="0" max="255" value="0" step="5" oninput="greenOutput.value=greenInput.value"/> <output for="greenInput" id="greenOutput" value="0"> 0 </output></li>
+                    
+                    <li><label> Blue: </label><input type="range" id="blueInput" min="0" max="255" value="0" step="5" oninput="blueOutput.value=blueInput.value" /> <output for="blueInput" id="blueOutput" value="0"> 0 </output></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend> Alpha </legend>
+                <label> Alpha: </label><input type="range" id="alphaInput" min="0" max="1" value="0" step="0.01" oninput="alphaOutput.value=alphaInput.value" /> <output for="alphaInput" id="alphaOutput" value="0"> 0 </output>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Output Color</legend>
+                <input type="text" name="colorOutput" />
+            </fieldset>
+
+        </form>
+
+        <footer>
+            <h2><a href="/index.html" > Project Directory </a></h2>
+            <h5> Brian Merriman | Modern Developer | 2016 </h5>
+        </footer>
+    </body>
+</html>

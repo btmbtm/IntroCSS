@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Introduction to CSS: Scheduling Form </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <form>
+            <h1> Appointment Form </h1>
+            <fieldset>
+                <legend> Appointment Date and Time </legend>
+                <ul id="datetime">
+                    <li>
+                        <label>Date: </label>
+                        <input type="date" required />
+                    </li>
+                    <li>
+                        <label>Time: </label>
+                        <input type="datetime" required />
+                    </li>
+                    <li>
+                        <label> Time Zone: </label>
+                        <select name="timezone">
+                            <option value="etz">Eastern Time Zone</option>
+                            <option value="ctz">Central Time Zone</option>
+                            <option value="mtz">Mountain Time Zone</option>
+                            <option value="ptz">Pacific Time Zone</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Appointment Purpose </legend>
+                <textarea rows="4" cols="50" placeholder="Describe the purpose of your appointment here..."></textarea>
+                
+            </fieldset>
+            <fieldset id="contact">
+                <legend> Contact Information </legend>
+                <ul>
+                    <li>
+                        <label> Telephone:</label>
+                        <input type="tel" required />
+                    </li>
+                    <li>
+                        <label> Email: </label>
+                        <input type="email" required />
+                    </li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="Make Appointment" />
+        </form>
+        <footer>
+            <h2><a href="/index.html" > Project Directory </a></h2>
+            <h5> Brian Merriman | Modern Developer | 2016 </h5>
+        </footer>
+    </body>
+</html>

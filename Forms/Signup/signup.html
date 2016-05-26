@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Introduction to CSS: Signup Form </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Dhurjati' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        
+        <form name="signupform" action="" method="post">
+            <h2 class="title"> Signup Form </h2>
+            <p> Note: All fields are required for signup </p>
+            <fieldset>
+                <legend> Personal Details </legend>
+                <ul>
+                    <li><label for="firstName"> First Name: </label> <input type="text" name="firstName" placeholder="John" size="30" minlength="2" maxlength="50" required="required"/></li>
+                    <li><label for="lastName"> Last Name: </label> <input type="text" name="lastName" placeholder="Doe" size="30" minlength="2" maxlength="50" required="required" /></li>
+                    <li><label for="DOB"> Date of Birth:  </label> <input type="date" name="DOB" required="required" /></li>
+                </uL>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend> Account Information </legend>
+                <ul>
+                    <li><label for="email"> Email: </label> <input type="email" name="email" size="30" placeholder="username@email.com" maxlength="50" required="required"/></li>
+                    <li><label for="password"> Password: </label> <input type="password" name="password" size="30" minlength="6" maxlength="30" required="required" placeholder="•••••"/></li>
+                </ul>
+            </fieldset>
+            <br/>
+            <input type="Submit" value="Create Account" />
+        </form>
+        <footer>
+            <h2><a href="/index.html" > Project Directory </a></h2>
+            <h5> Brian Merriman | Modern Developer | 2016 </h5>
+        </footer>
+    </body>
+</html>

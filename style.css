@@ -1,0 +1,53 @@
+body {
+    width: 100%;
+    margin: auto;
+    font-family: 'Cambay', sans-serif;
+}
+
+header {
+    height: 600px;
+    background-image: url("http://images.inc.com/uploaded_files/image/970x450/digital-mountains-1940x900_29457.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header .title {
+    font-size: 4em;
+    margin: 0;
+    margin-left: 5%;
+    padding-top: 100px;
+}
+
+header .author {
+    margin-top: 0;
+    margin-left: 5%;
+    font-size: 1.5em;
+}
+
+header .quote {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+header .quote h3 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+header .quote label {
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+section.directory {
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+footer {
+    margin-left: 5%;
+    margin-top: 5%;
+}

@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+form h2 {
+  text-align: center;
+}
+form {
+  width: 35%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: Snow;
+  font-family: Arial;
+  margin: auto;
+  margin-top: 100px;
+}
+fieldset {
+  background-color: white;
+}
+form h1 {
+  text-align: center;
+}
+form label {
+  font-size: 1em;
+  width: 25%;
+  display: inline-block;
+}
+form input {
+  display: inline-block;
+}
+#name {
+  width: 98%;
+}
+#cardnum {
+  width: 98%;
+}
+#csv {
+  width: 32%;
+}
+select {
+  width: 32%;
+}
+input[type="text"], select {
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+fieldset {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid black;
+}
+fieldset legend {
+  font-size: 1.4em;
+}
+input[type="submit"] {
+  width: 100%;
+  border: 2px solid black;
+  height: 50px;
+  border-radius: 5px;
+  background-color: Lavender;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+form input[type="submit"]:hover {
+  background-color: Thistle;
+  color: white;
+}
+form input[type="submit"]:active {
+  background-color: Plum;
+  color: white;
+}

@@ -1,0 +1,59 @@
+form{
+  font-family: Arial;
+  width: 50%;
+  padding: 2%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: Snow;
+  margin: auto;
+  margin-top: 5%;
+  
+}
+
+form h2 {
+  color: #4d4e53 ;
+  
+}
+input[type="text"] {
+  vertical-align:top;
+  layout: inline-block;
+  font-size: 1.2em;
+  border: 1px solid black;
+  width: 60%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  height: 40px;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+select{
+  layout: inline-block;
+  font-size: 1em;
+  width: 25%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 40px;
+  padding-left: 5px;
+  margin: 0;
+}
+
+input[type="submit"] {
+  layout: inline-block;
+  font-size: 1em;
+  width: 15%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: LightGray ; 
+}
+
+input[type="submit"]:hover {
+  background-color: DarkGray  ; 
+  color: white;
+}
+
+input[type="submit"]:active {
+  background-color: Gray ; 
+  color: white;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Introduction to CSS: Search Form </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Dhurjati' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        
+        <form name="signupform" action="" method="post">
+            <h2 class="title"> Search Our Store: </h2>
+
+            <select name="searchType" required>
+                <option selected disabled>Chose Category</option>
+                <optgroup label="Women's">
+                    <option value="womensClothing"> Women's Clothing </option>
+                    <option value="womensShoes"> Women's Shoes</option>
+                    <option value="womensAccessories"> Women's Accessories </option>
+                </optgroup>
+                <optgroup label="Men's">
+                    <option value="mensClothing"> Men's Clothing </option>
+                    <option value="mensShoes"> Men's Shoes</option>
+                    <option value="mensAccessories"> Men's Accessories </option>
+                </optgroup>
+                <optgroup label="Childrens'">
+                    <option value="childrensClothing"> Childrens' Clothing </option>
+                    <option value="childrensShoes"> Childrens' Shoes</option>
+                    <option value="childrensAccessories"> Childrens' Accessories </option>
+                </optgroup>
+                
+                <optgroup label="Childrens's">
+                    <option value="childrensClothing"> Cosmetics and Perfumes </option>
+                    <option value="childrensShoes"> Pets </option>
+                </optgroup>
+            </select>
+
+            <input type="text" name="searchInput" placeholder="Search here!" minlength="3" maxlength="30" required/>
+            <input type="submit" value="Search" />
+        </form>
+
+        <footer>
+            <h2><a href="/index.html" > Project Directory </a></h2>
+            <h5> Brian Merriman | Modern Developer | 2016 </h5>
+        </footer>
+    </body>
+</html>

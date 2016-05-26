@@ -1,0 +1,61 @@
+form {
+  font-family: 'Inconsolata';
+  width: 25%;
+  margin: auto;
+  margin-top: 5%;
+  border: 3px solid Brown;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: BlanchedAlmond;
+}
+form ul {
+  list-style: none;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+form h1 {
+  color: Brown;
+}
+form ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+form ul li label {
+  font-size: 1.2em;
+}
+form ul li input[type="text"], input[type="password"] {
+  width: 100%;
+  height: 40px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+  margin-top: 5px;
+}
+form ul li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+  vertical-align: middle;
+}
+#remember {
+  font-size: 0.95em;
+}
+form ul li input[type="submit"] {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 1.1em;
+  background-color: Brown;
+  color: White;
+}
+form ul li input[type="submit"]:hover {
+  background-color: Maroon;
+  color: White;
+}
+form ul li input[type="submit"]:active {
+  background-color: Black;
+  color: White;
+}

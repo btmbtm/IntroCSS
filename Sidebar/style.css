@@ -1,0 +1,42 @@
+body {font-size: 16px;}
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+#sidebar{
+  width: 20%;
+  float: right;
+  border: 5px solid DarkTurquoise ;
+  border-radius: 2%;
+  font-family: 'Josefin Slab', serif;
+  background-color: LightCyan;
+  margin-top: 5%;
+  
+}
+
+#sidebar h1, h2, h3, h4{
+  color: DarkTurquoise;
+}
+
+#linkback {
+  color: Crimson;
+  text-decoration: none;
+}
+
+#sidebar_content{
+  padding: 10%;
+}
+
+#sidebar #self{
+  border: 2px solid DarkTurquoise ;
+  border-radius: 5%;
+}
+
+footer {
+    clear: both;
+    margin-left: 5%;
+    margin-top: 30%;
+}

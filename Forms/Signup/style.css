@@ -1,0 +1,60 @@
+form {
+  width: 500px;
+  font-family: Arial;
+  border: 1px solid black;
+  padding: 10px;
+  overflow: hidden;
+  background-color: AliceBlue;
+  margin: auto;
+  margin-top: 5%;
+}
+form .title {
+  background-color: MediumSeaGreen;
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+form legend {
+  font-size: 1.2em;
+}
+form ul {
+  list-style: none;
+}
+form label {
+  width: 45%;
+  margin-top: 3px;
+  display: inline-block;
+  float: left;
+  padding: 5px;
+}
+form input[type="text"], input[type="email"], input[type="date"], input[type="password"] {
+  height: 20px;
+  width: 45%;
+  padding: 5px 8px;
+}
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px 10px;
+  margin-left: 0.5%;
+  background-color: MediumSeaGreen;
+  color: White;
+  margin: auto;
+}
+form input[type="submit"]:hover {
+  background-color: green;
+  color: white;
+}
+form input[type="submit"]:active {
+  background-color: DarkGreen;
+  color: white;
+}
+form ul li {
+  padding: 5px;
+  margin: 5px;
+}
+form input:focus:invalid {
+  background-color: Pink;
+}
+form input:focus:valid {
+  background-color: Chartreuse;
+}
