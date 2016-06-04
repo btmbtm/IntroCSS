@@ -1027,11 +1027,11 @@ body .markdown-body
 <li>
 <p>JavaScript Statements</p>
 <ol>
-<li>From your understanding of expressions and statements, write the difference between them.</li>
-</ol>
+<li>
+<p>From your understanding of expressions and statements, write the difference between them.</p>
 <p>A statement is a discrete block of code that can be acted on by the interpreter (or ignored int he case of a comment),  be it a simple declaration of a variable or a complex expression coupled with a function call.</p>
 <p>An expression is any combination of literals, variables, and operators that <em>results in a value</em>. Its results can be used by operations in a statement, such as the declaration of a variable or the calling of a function.</p>
-<ol>
+</li>
 <li>
 <p>Identify the keywords, comments, literals, variables, operators, and expressions in the following program. How many statements are there?</p>
 <pre><code>var sum = 32 + 23 + 26;
@@ -1075,7 +1075,7 @@ Infinity
 typeof(100/0)
 "number"
 </code></pre>
-<p>We get Infiinity as a result, with is a &ldquo;number&rdquo;.</p>
+<p>We get <code>Infiinity</code> as a result, which is a &ldquo;number&rdquo;.</p>
 </li>
 <li>
 <p>Create an array with 3 items: &ldquo;banana&rdquo;, &ldquo;apple&rdquo;, &ldquo;orange&rdquo;. Print all these items using index.</p>
@@ -1106,10 +1106,13 @@ typeof(100/0)
 <li>
 <p>Experiment with the precedence of arithmetic and logical operators. Write a short report of your findings.</p>
 <p>In Javascript, arithmetic operators follow PEMDAS from left to right, so any expressions within parenthesis are executed first, followed by function calls, followed by exponentiation, multiplication, division, and  modular division, followed finally by division and subtraction. </p>
-<p>The logical NOT(!) evaluates before any of the expressions above. After any arithemtic operations are evaluated, less than type statements (&lt;, &lt;=)or more than type statements (&gt;, &gt;=) are evaluated first, followed by equality statements (==, ===) and inequality statements (!=, !===). AND statements (&amp;&amp;) are executed next, followed by any OR (||) statements.</p>
+<p>The logical NOT(!) evaluates before any of the expressions above. After any arithmetic operations are evaluated, less than type statements (&lt;, &lt;=)or more than type statements (&gt;, &gt;=) are evaluated first, followed by equality statements (==, ===) and inequality statements (!=, !===). AND statements (&amp;&amp;) are executed next, followed by any OR (||) statements.</p>
 </li>
 <li>
 <p>What happens when a boolean is added with a number or a number is added with a string. Experiment on the arithmetic, logical, and comparison operations of different types, i.e., numbers, booleans, and strings. Write a short report of your findings. </p>
+<p>From my basic understanding, when comparing true and false to numbers or strings, true evaluates to 1 and false to 0. When using true and false in math operations they evaluate to the same. </p>
+<p>When comparing strings to numbers, the String converts to a number somehow. When adding strings to booleans or numbers, the numbers or booleans convert in to string and are concatanated to the string. Other math operations fail when using strings (returns NaN). </p>
+<p>Numbers act how you wold expect numbers to act. The only execption is when they are added with strings, since they concatonate instead of adding.</p>
 </li>
 <li>
 <p>Write a program that converts celsius temperature to fahrenheit and vice versa. The formula for conversion is: \frac{c}{5} = \frac{f-32}{9} where c represents celsius and f represents fahrenheit.</p>
@@ -1225,7 +1228,7 @@ console.log("The cost of the product: " + (this.cost - this.cost * discount));
 <p>Code:</p>
 <pre><code>function inArray(arr, item){
   for(var i = 0; i &lt; arr.length; i++){
-    if(arr[i]===item){
+    if(arr[i] === item){
       return true;
     }
   }  
@@ -1531,7 +1534,7 @@ document.write(introCSS.instructor + "&lt;br&gt;");
 </li>
 <li>
 <p>Suppose you are designing software for a library. The library has a name, an address, lots of books, and customers who borrow books. Every book has a name, author name, and type. Every customer is required to provide a name, an email address, and his/her age to borrow books. Describe the data types you would use to design the library software.</p>
-<p>First I would create a Library object via object literal notation (because there is only one library). I would populate the library with a name(string), address(string), an array of books in the library(of type Book), and an array of customers(of type Customer). </p>
+<p>First, I would create a Library object via object literal notation (because there is only one library). I would populate the library with a name(string), address(string), an array of books in the library(of type Book), and an array of customers(of type Customer). </p>
 <pre><code>function Library  = {
     name: "Manhattan Library",
     address: "123 Broadway, Manhattan, NY 10321",
@@ -1572,9 +1575,15 @@ document.write(introCSS.instructor + "&lt;br&gt;");
 </li>
 <li>
 <p>Write a function called pickBy(obj, callback) that applies callback on each property of the object and picks the property if the callback returns true.</p>
-<pre><code>function pickBy(obj, callback){
-    var result = {};
-
+<pre><code>function pickBy(obj, callback) {
+  var result = {};
+  for (var p in obj) {
+    document.write("OK"+"&lt;br&gt;");
+    if (callback(obj[p])) {
+      result[p] = obj[p];
+    }
+  }
+  return result;
 }
 </code></pre>
 </li>
@@ -1617,23 +1626,31 @@ document.write(introCSS.instructor + "&lt;br&gt;");
 </li>
 <li>
 <p>Write a function to get the month name of a date.</p>
-<p>function getMonthName(date){<br />
-  var months = [&ldquo;January&rdquo;,&rdquo;February&rdquo;,&rdquo;March&rdquo;,&rdquo;April&rdquo;, &ldquo;May&rdquo;, &ldquo;June&rdquo;, &ldquo;July&rdquo;, &ldquo;August&rdquo;, &ldquo;September&rdquo;, &ldquo;October&rdquo;, &ldquo;November&rdquo;, &ldquo;December&rdquo;]<br />
-  return months[date.getMonth()];<br />
-}</p>
+<pre><code>function getMonthName(date){
+  var months = ["January","February","March","April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  return months[date.getMonth()];
+}
+</code></pre>
 </li>
 <li>
 <p>Write a function to add minutes to a date.</p>
+<pre><code>function addMinutes(date, minutes) {
+  return date.setMinutes(date.getMinutes() + minutes);
+}
+</code></pre>
 </li>
 <li>
 <p>Write a function to print the current day of the week.</p>
-<p>function getWeekName(date){<br />
-  var months = [&ldquo;Sunday&rdquo;, &ldquo;Monday&rdquo;, &ldquo;Tuesday&rdquo;,&rdquo;Wednesday&rdquo;, &ldquo;Thursday&rdquo;, &ldquo;Friday&rdquo;, &ldquo;Saturday&rdquo;];<br />
-  return months[date.getDay()];<br />
-}</p>
+<pre><code>function getWeekName(date){
+  var months = ["Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday"];
+  return months[date.getDay()];
+}
+</code></pre>
 </li>
 <li>
-<p>Write a function to calculate the last day of a month.</p>
+<p>Write a function to calculate the last day of a month. </p>
+<p><p data-height="500" data-theme-id="light" data-slug-hash="yJNpqL" data-default-tab="js,result" data-user="btmbtm" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/btmbtm/pen/yJNpqL/">getLastDayOfMonth</a> by btm (<a href="http://codepen.io/btmbtm">@btmbtm</a>) on <a href="http://codepen.io">CodePen</a>.</p><br />
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script></p>
 </li>
 <li>
 <p>Given an array of dates, find the most recent date.</p>
@@ -1647,12 +1664,13 @@ document.write(introCSS.instructor + "&lt;br&gt;");
 </li>
 <li>
 <p>Write a function to count the number of days passed since the beginning of the year.</p>
-<p>function daysSinceJan1() {<br />
-  var today = new Date();<br />
-  var firstDayOfYear = new Date(today.getFullYear(), 0, 1);<br />
-  var millisecondsInDay = 24 * 60 * 60 * 1000;<br />
-  return Math.floor((today.getTime() - firstDayOfYear.getTime()) / millisecondsInDay);<br />
-}</p>
+<pre><code>function daysSinceJan1() {
+  var today = new Date();
+  var firstDayOfYear = new Date(today.getFullYear(), 0, 1);
+  var millisecondsInDay = 24 * 60 * 60 * 1000;
+  return Math.floor((today.getTime() - firstDayOfYear.getTime()) / millisecondsInDay);
+}
+</code></pre>
 </li>
 <li>
 <p>Given the date of birth, write a program to calculate age.</p>
@@ -1666,29 +1684,33 @@ document.write(introCSS.instructor + "&lt;br&gt;");
 <ol>
 <li>
 <p>Convert a 2D array to a 1D array.</p>
-<p>function flatten(arr) {<br />
-  var out = [];<br />
-  for (var i = 0; i &lt; arr.length; i++) {<br />
-    for (var j = 0; j &lt; arr[i].length; j++) {<br />
-      out.push(arr[i][j]);<br />
-    }<br />
-  }<br />
-  return out;<br />
-}</p>
+<pre><code>function flatten(arr) {
+  var out = [];
+  for (var i = 0; i &lt; arr.length; i++) {
+    for (var j = 0; j &lt; arr[i].length; j++) {
+      out.push(arr[i][j]);
+    }
+  }
+  return out;
+}
+</code></pre>
 </li>
 <li>
 <p>Find a particular item in a sorted array.</p>
+<pre><code>?
+</code></pre>
 </li>
 <li>
 <p>Write a program to shuffle an array</p>
-<p>function shuffle(arr){<br />
-  var shuf = [];<br />
-  while(arr.length &gt; 0){<br />
-    var nextLoc = Math.floor(Math.random()*arr.length); <br />
- shuf.push(arr.splice(nextLoc, 1));<br />
-  }<br />
-  return shuf;<br />
-}</p>
+<pre><code>function shuffle(arr){
+  var shuf = [];
+  while(arr.length &gt; 0){
+    var nextLoc = Math.floor(Math.random()*arr.length); 
+ shuf.push(arr.splice(nextLoc, 1));
+  }  
+  return shuf;
+}
+</code></pre>
 </li>
 <li>
 <p>Given an array of numbers, sort it in ascending order.</p>
