@@ -6,6 +6,8 @@
     <title>Introduction to CSS: Calculator </title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Dhurjati' rel='stylesheet' type='text/css'>
+    <!-- Javascript -->
+    <script type="text/javascript" src="calculator.js" defer></script> 
 </head>
 
 <body>
@@ -14,34 +16,34 @@
             <h1> System Calculator </h1>
         </div>
         <div id="calc_body">
-            <div id="display"> 0 </div>
+            <div id="display"></div>
             <div class="button_row">
-                <div class="button"> C </div>
-                <div class="button"> E </div>
-                <div class="button"> = </div>
-                <div class="button"> * </div>
+                <div id="clearBtn" class="button"> C </div>
+                <div id="deleteBtn" class="button"> D </div>
+                <div id="evaluateBtn" class="button"> = </div>
+                <div id="multBtn" class="button"> * </div>
             </div>
             <div class="button_row">
-                <div class="button"> 7 </div>
-                <div class="button"> 8 </div>
-                <div class="button"> 9 </div>
-                <div class="button"> / </div>
+                <div id="sevenBtn" class="button"> 7 </div>
+                <div id="eightBtn" class="button"> 8 </div>
+                <div id="nineBtn" class="button"> 9 </div>
+                <div id="buttonDiv" class="button"> / </div>
             </div>
             <div class="button_row">
-                <div class="button"> 4</div>
-                <div class="button"> 5 </div>
-                <div class="button"> 6 </div>
-                <div class="button"> - </div>
+                <div id="fourBtn" class="button"> 4</div>
+                <div id="fiveBtn" class="button"> 5 </div>
+                <div id="sixBtn" class="button"> 6 </div>
+                <div id="minusBtn" class="button"> - </div>
             </div>
             <div class="button_row">
-                <div class="button"> 1 </div>
-                <div class="button"> 2</div>
-                <div class="button"> 3</div>
-                <div class="button tall" style=" float: right; "> + </div>
+                <div id="oneBtn" class="button"> 1 </div>
+                <div id="twoBtn" class="button"> 2</div>
+                <div id="threeBtn" class="button"> 3</div>
+                <div id="addBtn" class="button tall" style=" float: right; "> + </div>
             </div>
             <div class="button_row_3 ">
-                <div class="button wide "> 0 </div>
-                <div class="button "> . </div>
+                <div id="zeroBtn" class="button wide "> 0 </div>
+                <div id="decBtn" class="button "> . </div>
             </div>
         </div>
     </div>
