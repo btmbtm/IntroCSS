@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Introduction to CSS: Product Listing Page </title>
+
+        <!-- STYLES/CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Sarpanch' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+        <!-- FONT AWESOME ICONS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://use.fontawesome.com/0b12db3902.js"></script>
+
+        <!-- JAVASCRIPT -->
+        <script src="shopping.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <i id="cartToggle" class="fa fa-2x fa-shopping-cart" aria-hidden="true"><span id="cartItemsNumber" style="font-size: 0.5em;"> 0 </span></i>
+        <header>
+            <h1 id="title"> <i style="color:green;"class="fa fa-envira" aria-hidden="true"></i> A Little Leaf </h1>
+            <p id="est"> Estsablished 1996 </p>
+            <nav>
+                <ul>
+                    <li>Teas</li>
+                    <li> Wares </li>
+                    <li> About </li>
+                    <li> Contact </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="teaProductDisplay" class="productSection">
+            <h1> Teas for Sale </h1>
+            
+        </div>
+        <div class="cart">
+            <button id="closeCartBtn" style="float:right;"><i class=" fa-2x fa fa-times" aria-hidden="true"></i></button>
+            <div id="cartHead">
+                <h2> Cart </h2>
+            </div>
+            <table class="cartTable">
+                <thead>
+                    <tr id="total">
+                        <th> </th>
+                        <th class="productName"> Product </th>
+                        <th> Cost </th>
+                        <th> Quantity </th>
+                        <th> Remove </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td id="rowBorder" colspan="5"> </td>
+                </tr>
+                <tr >
+                    <td> </td>
+                    <td class="productName"> Total </td>
+                    <td id="cartTotalValue"> $185.00 </td>
+                    <td id="cartTotalItems"> 3 <span style="font-size:.7em;">items</span> </td>
+                </tr>
+                <tr class="promo">
+                    <td> </td>
+                    <td class="productName"> Enter promo code: </td>
+                    <td> <input id="applyCouponCodeInput" type="text"/></td><td> <button id="applyCouponCodeBtn">  Apply </button> </td><td id="currentlyAppliedDisCode"> </td>
+                </tr>
+                
+                <tr class="continueShopping">
+                    <td> </td>
+                    <td class="productName"> Do you need anythinge else? </td>
+                    <td colspan="2"> <button id="continueShoppingBtn"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Continue Shopping </button> </td>
+                </tr>
+                
+                
+                </tfoot>
+            </table>
+            <button id="checkoutBtn"> Checkout </button>
+        </div>
+        
+        <footer>
+            <h2><a href="../" > Project Directory </a></h2>
+            <h5> Brian Merriman | Modern Developer | 2016 </h5>
+        </footer>
+    </body>
+</html>
