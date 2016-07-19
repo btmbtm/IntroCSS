@@ -67,10 +67,8 @@ testValidatorFunction(validator.withoutSymbols, "(3) withoutSymbols", [
 ]);
 
 testValidatorFunction(validator.isDate, "(4) isDate", [
-    ["Invalid input: number", Date.now(), EXCEPTION],
     ["Invalid date string: garbage", "#$@", false],
     ["Invalid date string: word", "today", false],
-    ["Invalid date: date object", new Date("May 2016"), EXCEPTION],
     ["Valid date: date string", "2015", true],
     ["Valid date: date string", "03/25/2015", true],
     ["Valid date: date string", "2015-03", true],
@@ -102,18 +100,16 @@ testValidatorFunction(validator.isAfterDate, "(6) isAfterDate", [
 
 
 testValidatorFunction(validator.isBeforeToday, "(7) isBeforeToday", [
-    ["Invalid input: invalid Date object", new Date("July 2016"), EXCEPTION],
     ["Invalid input: empty string", "", EXCEPTION],
-    ["Invalid input: String", "March 2016", EXCEPTION],
+    ["Date before today", "March 2016", true],
     ["Date before today", new Date("2012"), true],
     ["Date after today", new Date("2323"), false],
     ["Date after today (string input)", "2323", false]
 ]);
 
 testValidatorFunction(validator.isAfterToday, "(8) isAfterToday", [
-    ["Invalid input: invalid Date object", new Date("July 2016"), EXCEPTION],
     ["Invalid input: empty string", "", EXCEPTION],
-    ["Invalid input: String", "March 2016", EXCEPTION],
+    ["Date before today", "March 2016", true],
     ["Date before today", new Date("2012"), false],
     ["Date after today", new Date("2323"), true]
 ]);
