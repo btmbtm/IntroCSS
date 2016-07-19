@@ -5,10 +5,12 @@
         <title>Introduction to CSS: Questionnaire Form </title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+         <script src="../Javascript/validator.js" type="text/javascript" defer></script>
+        <script type="text/javascript" src="questionnaire.js" defer></script>
     </head>
     <body>
         
-        <form action="" method="">
+        <form name="pizzaQuestionnaire" id="pizzaQuestionnaire" action="" method="">
             <h1> A Short Pizza Questionnaire </h1>
             <h3> What is your favorite pizza type? </h3>
             <ul>
@@ -19,13 +21,13 @@
                     <input type="radio" name="pizzaType" value="deepDish" required /> <label> Chicago Deep Dish </label>
                 </li>
                 <li>
-                    <input type="radio" name="pizzaType" value="deepDish" required /> <label> Sicilian </label>
+                    <input type="radio" name="pizzaType" value="sicilian" required /> <label> Sicilian </label>
                 </li>
                 <li>
-                    <input type="radio" name="pizzaType" value="deepDish" required /> <label> Thin Crust </label>
+                    <input type="radio" name="pizzaType" value="thinCrust" required /> <label> Thin Crust </label>
                 </li>
                 <li>
-                    <input type="radio" name="pizzaType" value="deepDish" required /> <label> Other  </label> <input type="text" size="20" minlength="6" maxlength="30" />
+                    <input type="radio" name="pizzaType" value="other" required /> <label> Other  </label> <input id="pizzaTypeOther" for="pizzaTopping" type="text" default="Other pizza type" size="20" readonly/>
                 </li>
             </ul>
             <h3> What is your favorite pizza topping? </h3>
@@ -43,7 +45,7 @@
                     <input type="radio" name="pizzaTopping" value="chicken" required/><label> Chicken </label>
                 </li>
                 <li>
-                    <input type="radio" name="pizzaTopping" value="other" required/><label> Other </label> <input type="text" size="20" minlength="6" maxlength="30" />
+                    <input type="radio" name="pizzaTopping" value="other" required/><label> Other </label> <input id="pizzaToppingOther" for="pizzaTopping" type="text" size="20" readonly="" />
                 </li>
             </ul>
             <input type="submit" value="Submit Your Response" />

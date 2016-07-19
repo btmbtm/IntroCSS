@@ -5,30 +5,34 @@
         <title>Introduction to CSS: Signup Form </title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Dhurjati' rel='stylesheet' type='text/css'>
+        <script src="../Javascript/validator.js" type="text/javascript" defer></script>
+        <script src="signup.js" type="text/javascript" defer></script>
     </head>
     <body>
         
-        <form name="signupform" action="" method="post">
+        <form id="signupform" action="" method="post">
             <h2 class="title"> Signup Form </h2>
             <p> Note: All fields are required for signup </p>
             <fieldset>
                 <legend> Personal Details </legend>
                 <ul>
-                    <li><label for="firstName"> First Name: </label> <input type="text" name="firstName" placeholder="John" size="30" minlength="2" maxlength="50" required="required"/></li>
-                    <li><label for="lastName"> Last Name: </label> <input type="text" name="lastName" placeholder="Doe" size="30" minlength="2" maxlength="50" required="required" /></li>
-                    <li><label for="DOB"> Date of Birth:  </label> <input type="date" name="DOB" required="required" /></li>
+                    <li><label for="firstName"> First Name: </label> <input type="text" name="firstName" for="signupform" placeholder="John" size="30" required="required"/></li>
+
+                    <li><label for="lastName"> Last Name: </label> <input type="text" name="lastName" for="signupform" placeholder="Doe" size="30" minlength="2" maxlength="50" required="required" /></li>
+
+                    <li><label for="DOB"> Date of Birth:  </label> <input type="date" name="DOB" for="signupform" required="required" placeholder="YYYY/MM/DD" /></li>
                 </uL>
             </fieldset>
             <br/>
             <fieldset>
                 <legend> Account Information </legend>
                 <ul>
-                    <li><label for="email"> Email: </label> <input type="email" name="email" size="30" placeholder="username@email.com" maxlength="50" required="required"/></li>
-                    <li><label for="password"> Password: </label> <input type="password" name="password" size="30" minlength="6" maxlength="30" required="required" placeholder="•••••"/></li>
+                    <li><label for="email"> Email: </label> <input type="email" name="email" for="signupform" size="30" placeholder="username@email.com" maxlength="50" required="required"/></li>
+                    <li><label for="password"> Password: </label> <input type="password" name="password" for="signupform" size="30" minlength="6" maxlength="30" required="required" placeholder="•••••"/></li>
                 </ul>
             </fieldset>
             <br/>
-            <input type="Submit" value="Create Account" />
+            <input type="submit" value="Create Account" />
         </form>
         <footer>
             <h2><a href="../../" > Project Directory </a></h2>

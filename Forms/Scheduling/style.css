@@ -53,11 +53,23 @@ form label {
   
 }
 
-#datetime li input, select{
+#datetime li input{
   display: box;
   width: 85%;
   margin: auto;
   margin-left: 5px;
+
+}
+
+#timezone{
+  height: 40px;
+}
+#apptTimeHr{
+  text-align: right;
+}
+#apptTime select{
+  width: 45%;
+  height: 40px;
 }
 
 form textarea{
@@ -73,12 +85,12 @@ form textarea{
   margin-bottom: 10px;
 }
 #contact label {
-  width: 10%;
+  width: 20%;
   display: inline-block;
 }
 
 #contact input{
-  width: 85%;
+  width: 75%;
   
 }
 

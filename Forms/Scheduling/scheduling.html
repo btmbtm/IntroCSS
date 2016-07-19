@@ -5,24 +5,50 @@
         <title>Introduction to CSS: Scheduling Form </title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+        <script src="../Javascript/validator.js" type="text/javascript" defer></script>
+    <script type="text/javascript" src="scheduling.js" defer></script>
     </head>
     <body>
-        <form>
+        <form name="apptForm" id="apptForm">
             <h1> Appointment Form </h1>
             <fieldset>
                 <legend> Appointment Date and Time </legend>
                 <ul id="datetime">
                     <li>
                         <label>Date: </label>
-                        <input type="date" required />
+                        <input name="apptDate" for="apptForm" type="date"  required />
                     </li>
-                    <li>
-                        <label>Time: </label>
-                        <input type="datetime" required />
+                    <li id="apptTime">
+                        
+                        <label> Time: </label>
+                        <select style="display:inline;" name="apptTimeHr" id="apptTimeHr" for="apptForm" placeholder="YYYY/MM/DD" required>
+                            <option selected disabled value="">-- Hour --</option>
+                             <option disabled value="">-- AM --</option>
+                            <option value="08">08 </option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                             <option disabled value="">-- PM --</option>
+                            <option value="12">12 </option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                        </select>
+                        :
+                        <select style="display:inline;" name="apptTimeMin" for="apptForm" required>
+                            <option selected disabled value="">-- Minute --</option>
+                            <option value="0">00</option>
+                            <option value="15">15</option>
+                            <option value="30">30</option>
+                            <option value="45"> 45 </option>
+                        </select>
                     </li>
                     <li>
                         <label> Time Zone: </label>
-                        <select name="timezone">
+                        <select name="timezone" id="timezone"  AMfor="apptForm" required>
+                            <option selected disabled value="">-- Select Time Zone --</option>
                             <option value="etz">Eastern Time Zone</option>
                             <option value="ctz">Central Time Zone</option>
                             <option value="mtz">Mountain Time Zone</option>
@@ -34,23 +60,22 @@
             
             <fieldset>
                 <legend> Appointment Purpose </legend>
-                <textarea rows="4" cols="50" placeholder="Describe the purpose of your appointment here..."></textarea>
-                
+                <textarea name="apptPurpose" for="apptForm" rows="4" cols="50" placeholder="Describe the purpose of your appointment here..." required></textarea>
             </fieldset>
             <fieldset id="contact">
                 <legend> Contact Information </legend>
                 <ul>
                     <li>
                         <label> Telephone:</label>
-                        <input type="tel" required />
+                        <input name="contactTel" type="tel" for="apptForm" placeholder="XXX-XXX-XXXX"required/>
                     </li>
                     <li>
                         <label> Email: </label>
-                        <input type="email" required />
+                        <input name="contactEmail" type="text" for="apptForm" placeholder=""required />
                     </li>
                 </ul>
             </fieldset>
-            <input type="submit" value="Make Appointment" />
+            <input type="submit" for="apptForm" value="Make Appointment" />
         </form>
         <footer>
             <h2><a href="../../" > Project Directory </a></h2>
