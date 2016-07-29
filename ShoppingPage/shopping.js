@@ -21,9 +21,6 @@ applyCouponCodeBtn.addEventListener("click", testAndApplyCouponCode);
 cartTotalValue.innerHTML = "$0.00";
 cartTotalItems.innerHTML = 0;
 
-function wow() {
-    alert("wow");
-}
 var cartCurrentItems = [];
 hideCart();
 

@@ -9,6 +9,8 @@
   };
 
   //1 utilities.by | Write a function that operates similarly to .forEach. Your function should iterate and call the callback parameter for each element or property of a list at the interval specified by the n parameter. It should not call callback on values greater than the list’s number of elements.
+  //
+  //INSTRUCTIONS UNCLEAR
 
   utilities.by = function(list, n, callback) {
     for (var i = n - 1; i < list.length; i += n) {
@@ -42,8 +44,9 @@
 
     //loop thru keys w/ for in loop
     for (var key in object) {
-      //first push key then matching value onto output array
+      //first push key  onto output array 
       out.push(key);
+      //next push key's value
       out.push(object[key]);
     }
 
