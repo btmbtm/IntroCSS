@@ -35,10 +35,10 @@ form input {
   width: 98%;
 }
 #csv {
-  width: 32%;
+  width: 30%;
 }
 select {
-  width: 32%;
+  width: 30%;
 }
 input[type="text"], select {
   height: 50px;
@@ -76,4 +76,24 @@ footer {
   clear: both;
   text-align: center;
   margin-top: 10%
+}
+
+@media (max-width: 1000px) {
+ body { background-color: lightblue; 
+  font-size: 1.5em;
+}
+ form { width: 90%; }
+ #csv{
+  width: 100%;
+ }
+ select {
+    width: 48%;
+  }
+}
+
+
+@media (max-width: 360px) {
+ body { background-color: lightpink; font-size: 1.2em}
+ form { width: 100%; }
+ 
 }
