@@ -29,6 +29,7 @@ form input[type="text"] {
   height: .9em;
   padding: 5px;
    font-size: 1em;
+   width: 80%;
 }
 
 form input[type="submit"] {
@@ -53,4 +54,32 @@ footer {
   clear: both;
   text-align: center;
   margin-top: 10%
+}
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: lightblue;
+        font-size: 1.2em;
+    }
+    form {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+        font-size: 1.2em;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        margin: 0 0;
+    }
+}
+@media only screen and (max-width: 360px) {
+    body {
+      background-color: lightpink;
+    }
 }

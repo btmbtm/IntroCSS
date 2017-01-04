@@ -1,78 +1,78 @@
-body{
-  background-color: snow;
+body {
+    background-color: snow;
 }
-
 form {
-  width: 50%;
-  border: 1px solid black;
-  padding: 10px;
-  font-family: 'Josefin Slab', serif;
-  margin: auto;
-  margin-top: 50px;
-  border-radius: 2%;
-  background-color: Snow;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    font-family: 'Josefin Slab', serif;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 2%;
+    background-color: Snow;
 }
 form fieldset {
-  background-color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 1.2em;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
 form fieldset legend {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 form h1 {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 form ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 form label {
-  width: 10%;
-  display: inline-block;
-  margin: 10px;
+    width: 10%;
+    display: inline-block;
+    margin: 10px;
 }
 form input[type="range"] {
-  width: 80%;
-  display: inline-block;
+    width: 80%;
+    display: inline-block;
 }
 form input[type="text"] {
-  width: 100%;
-  background-color: black;
-  border: none;
+    width: 100%;
+    background-color: black;
+    border: none;
 }
 form output {
-  text-align: center;
-  width: 2%;
-  display: inline-block;
+    text-align: center;
+    width: 2%;
+    display: inline-block;
 }
 footer {
-  clear: both;
-  text-align: center;
-  margin-top: 10%;
+    clear: both;
+    text-align: center;
+    margin-top: 10%;
 }
-
-
-@media only screen and (max-width: 800px) {
- body { 
-  background-color: lightblue; 
-  font-size: 1.2em;
-  }
- form { width: 100%; 
- }
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        font-size: 1.2em;
+    }
+    form {
+        width: 100%;
+        margin: 0;
+    }
 }
-
-@media only screen and  (max-width: 460px) {
- body { 
-  background-color: yellow;
- }
- form { width: 100%; }
- form label {
-  width: 100%;
-  display: inline-block;
-  margin: 10px;
+@media only screen and (max-width: 360px) {
+    body {
+        background-color: yellow;
+        margin: 0;
+    }
+    form {
+        width: 100%;
+    }
+    form label {
+        width: 100%;
+        display: inline-block;
+        margin: 10px;
+    }
 }
-}
-

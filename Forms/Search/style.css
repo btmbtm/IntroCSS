@@ -16,7 +16,7 @@ form h2 {
 }
 input[type="text"] {
   vertical-align:top;
-  layout: inline-block;
+  display: inline-block;
   font-size: 1.2em;
   border: 1px solid black;
   width: 60%;
@@ -26,9 +26,9 @@ input[type="text"] {
   margin-left:-5px;
   margin-right:-5px;
 }
-
+ 
 select{
-  layout: inline-block;
+  display: inline-block;
   font-size: 1em;
   width: 29%;
   border: 1px solid black;
@@ -39,7 +39,7 @@ select{
 }
 
 input[type="submit"] {
-  layout: inline-block;
+  display: inline-block;
   font-size: 1em;
   width: 10%;
   border: 1px solid black;
@@ -49,12 +49,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: DarkGray  ; 
+  background-color: darkgray; 
   color: white;
 }
 
 input[type="submit"]:active {
-  background-color: Gray ; 
+  background-color: gray; 
   color: white;
 }
 
@@ -62,4 +62,43 @@ footer {
   clear: both;
   text-align: center;
   margin-top: 10%
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: lightblue;
+        font-size: 0.9em;
+    }
+    form {
+        width: 70%;
+    }
+    input[type="submit"] {
+      width: 96%;
+    }
+    input[type="text"]{
+      width: 67%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+        font-size: 0.8m;
+    }
+    form{
+      width: 90%;
+    }
+
+}
+@media only screen and (max-width: 360px) {
+    body {
+        background-color: lightpink;
+        font-size: 0.8em;
+    }
+
+    form{
+      width: 100%;
+    }
 }

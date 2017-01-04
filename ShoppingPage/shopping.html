@@ -20,18 +20,16 @@
         <script src="shopping.js" type="text/javascript" defer></script>
     </head>
     <body>
-        <i id="cartToggle" class="fa fa-2x fa-shopping-cart" aria-hidden="true"><span id="cartItemsNumber" style="font-size: 0.5em;"> 0 </span></i>
+        <i id="cartToggle" class="fa fa-2x fa-shopping-cart" ><span id="cartItemsNumber" style="font-size: 0.5em;"> 0 </span></i>
         <header>
             <h1 id="title"> <i style="color:green;"class="fa fa-envira" aria-hidden="true"></i> A Little Leaf </h1>
             <p id="est"> Estsablished 1996 </p>
-            <nav>
                 <ul>
                     <li>Teas</li>
                     <li> Wares </li>
                     <li> About </li>
                     <li> Contact </li>
                 </ul>
-            </nav>
         </header>
         <div id="teaProductDisplay" class="productSection">
             <h1> Teas for Sale </h1>
@@ -68,13 +66,14 @@
                 <tr class="promo">
                     <td> </td>
                     <td class="productName"> Enter promo code: </td>
-                    <td> <input id="applyCouponCodeInput" type="text"/></td><td> <button id="applyCouponCodeBtn">  Apply </button> </td><td id="currentlyAppliedDisCode"> </td>
+                    <td> <input id="applyCouponCodeInput" type="text"/></td>
+                    <td colspan="2"> <button id="applyCouponCodeBtn">  Apply </button> </td><td id="currentlyAppliedDisCode"> </td>
                 </tr>
                 
                 <tr class="continueShopping">
                     <td> </td>
                     <td class="productName"> Do you need anythinge else? </td>
-                    <td colspan="2"> <button id="continueShoppingBtn"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Continue Shopping </button> </td>
+                    <td colspan="3"> <button id="continueShoppingBtn"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Continue Shopping </button> </td>
                 </tr>
                 
                 

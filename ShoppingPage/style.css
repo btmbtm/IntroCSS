@@ -3,8 +3,8 @@
 }
 
 body {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  padding: 2%;
   font-family: 'Open Sans', sans-serif;
   
   background-color: MintCream ;
@@ -23,7 +23,7 @@ header {
   margin-bottom: 50px;
   border-bottom: 2px solid black;
   padding-bottom: 50px;
-  
+      
   width: 100%;
 }
 
@@ -40,31 +40,41 @@ header p#est {
   margin-left: 0;
 }
 
-header nav ul {
+header ul {
   list-style: none;
   float: right;
   margin: 0;
   padding: 0;
 }
 
-header nav ul li {
+header ul li {
   display: inline;
-  margin-left: 20px;
+  margin: 0px 20px;
+  cursor: pointer;
   font-size: 1.2em;
 }
 
-
+header ul li:hover {
+  background-color: lightgray;
+}
 .productSection {
   width: 90%;
   clear: both;
   margin: auto;
-
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .productSection h1 {
   
   border-bottom: 1px solid black;
   padding-bottom: 20px;
+  width: 100%;
+}
+
+.productSection > h2{
+  width: 100%;
+  color: gray;
 }
 
 .product {
@@ -83,6 +93,8 @@ header nav ul li {
   padding: 5%;
   
 }
+
+
 
 .product .add {
   width: 100%;
@@ -175,7 +187,9 @@ header nav ul li {
   border: 0px;
   border-radius: 5px;
 }
-
+#applyCouponCodeBtn{
+  width: 100%;
+}
 #currentlyAppliedDisCode{
   color: green;
   font-weight: lighter;
@@ -251,4 +265,100 @@ footer {
   clear: both;
   text-align: center;
   padding-top: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: lightblue;
+        width: 100%;
+        padding: 0;
+    }
+    .product{
+      width: 50%;
+    }
+    .cart{
+      width: 90%;
+      left: 20px;
+      top: 20px;
+    }
+    header nav ul{
+      margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+    .product{
+      width: 100% ;
+    }
+
+    header p#est{
+      text-align: center;
+      width: 100%;
+      float: none;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    header{
+      padding: 10px;
+    }
+    header ul {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0;
+}
+  .cart{
+    width: 100%;
+    top: 5px;
+    left: 0;
+    padding: 15px 3px;
+  }
+  .cart table td, .cart table td{
+    padding: 5px;
+  }
+
+  .cart table{
+    font-size: 1em;
+  }
+  #cartHead h2{
+    padding: 6px;
+    margin: 6px;
+  }
+  #checkoutBtn{
+    margin-top: 8px;
+  }
+  
+  tr th:nth-child(1){
+    display: none;
+  }
+  tr td:nth-child(1) {
+    display: none;
+  }
+
+  .cartTable .productName{
+    width: 30%;
+  }
+
+
+}
+@media only screen and (max-width: 360px) {
+    body {
+        background-color: lightpink;
+    }
+
+      .cartTable td, .cartTable td{
+    padding:5px 0;
+  }
+
 }

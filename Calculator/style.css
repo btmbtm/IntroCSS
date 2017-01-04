@@ -90,3 +90,28 @@ footer {
     text-align: center;
     margin-top: 10%;
 }
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: lightblue;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+ 
+
+}
+@media only screen and (max-width: 360px) {
+    body {
+        background-color: lightpink;
+    }
+    #calculator{
+            width: 100%
+    }    
+}
+
+
