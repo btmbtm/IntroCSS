@@ -52,3 +52,41 @@ footer {
   text-align: center;
   margin-top: 100px;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: lightblue;
+    }
+    header{
+        height: 80vh; 
+    }
+
+    .directory{
+        font-size: 1.2em;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+        font-size: 0.9em;
+    }
+
+    header{
+        height: 100vh; 
+    }
+
+
+}
+@media only screen and (max-width: 360px) {
+    body {
+        background-color: lightpink;
+    }
+
+    header{
+        font-size: 0.9em;
+        width: 100%;
+    }
+}

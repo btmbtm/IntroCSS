@@ -52,27 +52,41 @@ footer {
     text-align: center;
     margin-top: 10%;
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1024px) {
     body {
-        background-color: lightblue;
+        background-color: lightgreen;
         font-size: 1.2em;
     }
     form {
-        width: 100%;
-        margin: 0;
+        width: 90%;
     }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
     body {
-        background-color: yellow;
-        margin: 0;
+        background-color: lightblue;
+        font-size: 0.9em;
     }
     form {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
     form label {
         width: 100%;
         display: inline-block;
         margin: 10px;
     }
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        background-color: yellow;
+        margin: 0;
+        font-size: 0.8em;
+    }
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
 }

@@ -69,10 +69,10 @@ footer {
 @media only screen and (max-width: 1024px) {
     body {
         background-color: lightblue;
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
     form {
-        width: 70%;
+        width: 80%;
     }
     input[type="submit"] {
       width: 96%;
@@ -90,15 +90,22 @@ footer {
     form{
       width: 90%;
     }
+     select, input[type="text"], input[type="submit"]{
+      width: 100%;
+      margin: 0 auto;
+    }
 
 }
 @media only screen and (max-width: 360px) {
     body {
         background-color: lightpink;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     form{
       width: 100%;
     }
+
+   
+
 }

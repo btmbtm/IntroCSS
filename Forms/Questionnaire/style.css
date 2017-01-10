@@ -70,16 +70,23 @@ footer {
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightgreen;
-        font-size: 1.2em;
+        font-size: 1.1em;
         width: 100%;
     }
     form {
-        width: 100%;
-        margin: 0 0;
+        width: 80%;
+        margin: 10px auto;
     }
 }
+
 @media only screen and (max-width: 360px) {
     body {
+      font-size: 0.9em;
       background-color: lightpink;
     }
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 }

@@ -323,6 +323,7 @@ header ul li {
     top: 5px;
     left: 0;
     padding: 15px 3px;
+    overflow: hidden;
   }
   .cart table td, .cart table td{
     padding: 5px;
@@ -354,6 +355,7 @@ header ul li {
 }
 @media only screen and (max-width: 360px) {
     body {
+      font-size: 0.9em;
         background-color: lightpink;
     }
 

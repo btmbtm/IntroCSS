@@ -155,7 +155,8 @@ footer {
         font-size: 0.9em;
     }
     form{
-      width: 95%;
+      width: 85%;
+      margin: 0 auto;
     }
 
     #timezone{
@@ -165,6 +166,6 @@ footer {
 @media only screen and (max-width: 360px) {
     body {
         background-color: lightpink;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 }

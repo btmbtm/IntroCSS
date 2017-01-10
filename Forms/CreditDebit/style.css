@@ -78,11 +78,20 @@ footer {
   margin-top: 10%
 }
 
-@media (max-width: 1000px) {
- body { background-color: lightblue; 
-  font-size: 1.5em;
+@media (max-width: 1024px) {
+  body { background-color: lightgreen; font-size: 1.2em}
+  form { width: 80%; margin: 20px auto; }
+ #csv{
+  width: 100%;
+ }
+ select {
+    width: 48%;
+  }
 }
- form { width: 90%; }
+
+@media (max-width: 600px) {
+  body { background-color: lightblue; font-size: 1.2em}
+  form { width: 100%; margin: 5px auto; }
  #csv{
   width: 100%;
  }
@@ -93,7 +102,9 @@ footer {
 
 
 @media (max-width: 360px) {
- body { background-color: lightpink; font-size: 1.2em}
- form { width: 100%; }
- 
+ body { background-color: lightpink; font-size: 1em}
+ form { width: 100%; margin: 5px auto; }
+ select {
+    width: 100%;
+  }
 }
