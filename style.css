@@ -74,6 +74,10 @@ footer {
         font-size: 0.9em;
     }
 
+    header .title {
+    padding-top: 20px;
+}
+
     header{
         height: 100vh; 
     }
